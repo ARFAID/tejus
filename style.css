@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-family: 'Diplomata SC', cursive;
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    transition: .5s;
+    color: #40ff86;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }   
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #2ED64C;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(ui\ 1.png) no-repeat center;
+    background-size: cover;
+}
+.text{
+    margin-left: 150px;
+    margin-top: calc(((100vh - 80px) - 332px) / 2);
+    width: fit-content;
+}
+p{
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+}
+.p2{
+    font-weight: 100;
+    margin-top: 70px;
+    font-size: 20px;
+}
+h1{
+    font-weight: 200;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+h1 span{
+    color: #40ff86;
+}
+button{
+    color: black;
+    background-color: #00ff5e;
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 115px;
+}
+button:hover{
+    background-color: #00c147;
+    border: solid black 1px;
+    color: white;
+}
